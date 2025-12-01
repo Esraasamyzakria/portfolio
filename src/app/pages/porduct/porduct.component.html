@@ -1,10 +1,10 @@
-<section id="Projects" class="shadow-[0_0_20px_#00eaff] mx-auto rounded-3xl my-20 text-center py-24">
+<section id="Projects" class="shadow-[0_0_20px_#00eaff] mx-auto rounded-3xl my-20 text-center py-24 overflow-hidden">
     
   <h2 data-aos="fade-down"  class="text-4xl italic maincolor font-bold mb-10">
     My Projects
   </h2>
 
-  <p data-aos="fade-right" data-aos-delay="1500"
+  <p data-aos="fade-right" data-aos-delay="500"
      class="font-medium text-center text-2xl text-white dark:text-black pb-16 px-16 line-coverage">
     A collection of real-world projects built with modern tools, clean architecture, and high-quality code.
   </p>
@@ -14,9 +14,9 @@
   <div 
   class="text-white dark:text-black border-2 border-[#00eeff] rounded-3xl p-8 shadow-2xl bg-[#323946] dark:bg-white 
          hover:shadow-[0_0_20px_#00eaff] transition flex flex-col 
-         h-[600px]"
+          min-h-[600px]"
   [attr.data-aos]="p.aos" 
-  [attr.data-aos-delay]="$index * 800">
+  [attr.data-aos-delay]="$index * 300">
 
   <!-- Image -->
   <img [src]="p.image" alt="{{ p.name }} screenshot" 

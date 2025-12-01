@@ -1,9 +1,9 @@
-<section class="bg-[#323946] dark:bg-white  my-20 py-20"  (submit)="sendEmail($event)" id="Contact" >
+<section class="bg-[#323946] dark:bg-white  overflow-hidden my-20 py-20"  (submit)="sendEmail($event)" id="Contact" >
       <h2 data-aos="fade-down" class="text-center italic text-4xl text-[#00eeff] font-bold mb-28 ">
     Contact Me
   </h2>
 
-<div class="containers mx-auto  gap-10 grid grid-cols-1 md:grid-cols-2">
+<div class="containers mx-auto  gap-10 grid grid-cols-1 md:grid-cols-2 ">
     <div class=" bg-[#1f262f] dark:bg-white shadow-[0_0_20px_#00eaff] h-[700px]  rounded-3xl py-10  px-8 text-white dark:text-black"
          data-aos="fade-right"
          >
@@ -11,31 +11,31 @@
         <form >
                 
         <div data-aos="fade-right"
-         data-aos-delay="1000" class=" my-4">
+         data-aos-delay="500" class=" my-4">
             <label for="first_name" class="block mb-2.5 italic text-lg  font-medium text-[#00eeff] ">Your Name</label>
             <input name="name" type="text" id="first_name" class="bg-[#323946] dark:bg-white  border border-[#00eeff] text-white text-sm rounded-xl  focus:ring-brand focus:border-[#00eeff] block w-full px-4 py-3 hover:shadow-[0_0_20px_#00eaff]  placeholder:text-[#C0C0C0]" placeholder="Name" required />
         </div>
         <div data-aos="fade-right"
-         data-aos-delay="1500" class=" my-4">
+         data-aos-delay="1000" class=" my-4">
             <label for="Email-Address" class="block mb-2.5 italic text-lg  font-medium text-[#00eeff] ">Email Address</label>
             <input  name="email" type="email" id="Email-Address" class="bg-[#323946] dark:bg-white  border border-[#00eeff]text-white  text-sm rounded-xl focus:ring-brand focus:border-[#00eeff] block w-full px-4 py-3 hover:shadow-[0_0_20px_#00eaff]  placeholder:text-[#C0C0C0]" placeholder="Email " required />
         </div>
         <div data-aos="fade-right"
-         data-aos-delay="2000" class=" my-4">
+         data-aos-delay="1500" class=" my-4">
             <label for="subject" class="block mb-2.5 italic text-lg  font-medium text-[#00eeff] ">Subject</label>
             <input  name="subject" type="text" id="subject" class="bg-[#323946] dark:bg-white  border border-[#00eeff]text-white  text-sm rounded-xl focus:ring-brand focus:border-[#00eeff] block w-full px-4 py-3 hover:shadow-[0_0_20px_#00eaff]  placeholder:text-[#C0C0C0]" placeholder="subject " required />
         </div>
     <div class="my-4 " data-aos="fade-right"
-         data-aos-delay="2500">
+         data-aos-delay="2000">
         <label for="message" class="block mb-2.5 italic text-lg  font-medium text-[#00eeff]">Your message</label>
 <textarea name="message" id="message" rows="4" class="bg-[#323946] dark:bg-white  border border-[#00eeff]text-white  text-sm rounded-xl focus:ring-brand focus:border-[#00eeff] block w-full px-4 py-3 hover:shadow-[0_0_20px_#00eaff]  placeholder:text-[#C0C0C0]" placeholder="Write your thoughts here..."></textarea>
 </div>
-  <button data-aos="fade-up" data-aos-delay="500"  class="bg-[#00eeff] text-white px-5 py-3 rounded-xl my-10  w-full  font-semibold hover:bg-[#00eeff] transition">
+  <button data-aos="fade-up" data-aos-delay="200"  class="bg-[#00eeff] text-white px-5 py-3 rounded-xl my-10  w-full  font-semibold hover:bg-[#00eeff] transition">
      <i class="fa-solid fa-paper-plane px-10"></i> Send Massage 
     </button>
         </form>
     </div>
-<div class=" mx-auto flex flex-col   text-white dark:text-black px-5"
+<div class=" mx-auto flex flex-col   text-white dark:text-black px-5 "
      >
     <h2 data-aos="fade-left"
      data-aos-delay="500" class="text-4xl  font-bold mb-10">Let's Talk</h2>
@@ -44,7 +44,7 @@
      @for (contact of contacts; track $index) {
   <div 
     data-aos="fade-left"
-    [attr.data-aos-delay]="$index * 1000"
+    [attr.data-aos-delay]="$index * 300"
     class=" shadow-2xl bg-[#1f262f] dark:bg-white hover:shadow-[0_0_20px_#00eaff] rounded-3xl mt-10 p-8 flex items-center cursor-pointer"
   >
     <i class="{{contact.icon}} text-3xl maincolor me-5 mt-2"></i>
@@ -72,8 +72,6 @@
        
     @for (social of socials; track $index) {
           <span 
-      data-aos="fade-down-right"
-      [attr.data-aos-delay]="$index * 500"
       class="icon border-2 rounded-full w-14 h-14 flex items-center justify-center cursor-pointer relative"
       [ngStyle]="{'border-color': social.color || '#00eeff', 'color': social.color || '#00eeff'}"
       (click)="openLink(social.url)"

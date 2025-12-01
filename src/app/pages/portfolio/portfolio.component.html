@@ -1,21 +1,21 @@
-<section id="Home"  data-aos="fade-right" data-aos-delay="100" class="  container mx-auto  flex">
+<section id="Home"  data-aos="fade-right" data-aos-delay="100" class="  overflow-hidden container mx-auto  flex">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
    <div class="lg:pt-0 mb-10 md:pt-20 md:ps-2">
 
-  <h1 data-aos="fade-right" data-aos-delay="500" class="text-5xl md:text-7xl text-white dark:text-black font-bold">
+  <h1 data-aos="fade-right" data-aos-delay="400" class="text-5xl md:text-7xl text-white dark:text-black font-bold">
     <span class="maincolor">Hi</span>, My name is
   </h1>
 
-  <div data-aos="fade-right" data-aos-delay="1000" class="flex items-center justify-center">
+  <div data-aos="fade-right" data-aos-delay="900" class="flex items-center justify-center">
     <h2 class="text-5xl pt-5 md:text-6xl text-white dark:text-black font-bold">Esraa Samy</h2>
     <span class="hand-wave pt-2"><i class="fa-solid fa-hand-sparkles"></i></span>
   </div>
 
-  <div data-aos="fade-right" data-aos-delay="2000" class="text-3xl flex pt-5 md:text-5xl text-white dark:text-black font-bold">
+  <div data-aos="fade-right" data-aos-delay="1200" class="text-3xl flex pt-5 md:text-5xl text-white dark:text-black font-bold">
     I’M <span class="maincolor ps-4">Angular Developer </span>
   </div>
 
-  <p data-aos="fade-right" data-aos-delay="3000" class="text-white dark:text-black font-semibold text-2xl py-5">
+  <p data-aos="fade-right" data-aos-delay="1700" class="text-white dark:text-black font-semibold text-2xl py-5">
     <span class="maincolor">I</span>, build interactive and responsive web applications using Angular and modern web tools
   </p>
 
@@ -23,7 +23,7 @@
     @for (social of socials; track $index) {
           <span 
       data-aos="fade-down-right"
-      [attr.data-aos-delay]="$index * 1000"
+      [attr.data-aos-delay]="$index * 500"
       class="icon border-2 rounded-full w-14 h-14 flex items-center justify-center cursor-pointer relative"
       [ngStyle]="{'border-color': social.color || '#00eeff', 'color': social.color || '#00eeff'}"
       (click)="openLink(social.url)"
@@ -35,7 +35,7 @@
 
   </div>
 
-  <div data-aos="fade-up" data-aos-delay="8000" class="flex items-center mt-5 ms-5 gap-10">
+  <div data-aos="fade-up" data-aos-delay="2000" class="flex items-center mt-5 ms-5 gap-10">
     <app-reusablebutton></app-reusablebutton>
     <button   class="bg-[#00eeff] text-white px-5 py-3 rounded-full me-5 italic font-semibold hover:bg-[#00eeff] transition">
       <a href="#Contact" class="flex items-center">
@@ -47,7 +47,7 @@
 </div>
 
 
-    <div data-aos="zoom-in" data-aos-delay="500"  class="blob-glow w-[450px] h-[450px] flex items-center justify-center mx-auto">
+    <div data-aos="zoom-in" data-aos-delay="500"  class="blob-glow max-w-[450px] max-h-[450px] flex items-center justify-center mx-auto">
       <img src="/image/port1.jpg" class="w-full h-full object-cover object-top"/>
     </div>
   </div>
