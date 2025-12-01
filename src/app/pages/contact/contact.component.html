@@ -4,7 +4,7 @@
   </h2>
 
 <div class="containers mx-auto  gap-10 grid grid-cols-1 md:grid-cols-2 ">
-    <div class=" bg-[#1f262f] dark:bg-white shadow-[0_0_20px_#00eaff] h-[700px]  rounded-3xl py-10  px-8 text-white dark:text-black"
+    <div class=" bg-[#1f262f] dark:bg-white shadow-[0_0_20px_#00eaff] h-[700px]  rounded-3xl py-10  px-4 md:px-8 text-white dark:text-black"
          data-aos="fade-right"
          >
         <h3 class="text-3xl text-center font-bold mb-6">Send a Message</h3>
@@ -35,12 +35,12 @@
     </button>
         </form>
     </div>
-<div class=" mx-auto flex flex-col   text-white dark:text-black px-5 "
+<div class=" mx-auto flex flex-col container   text-white dark:text-black "
      >
     <h2 data-aos="fade-left"
      data-aos-delay="500" class="text-4xl  font-bold mb-10">Let's Talk</h2>
     <p data-aos="fade-left"
-     data-aos-delay="1000" class="font-semibold text-lg "><span class="maincolor text-2xl">I'm </span> always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of these channels.</p>
+     data-aos-delay="1000" class="font-semibold text-sm md:text-lg "><span class="maincolor text-2xl">I'm </span> always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of these channels.</p>
      @for (contact of contacts; track $index) {
   <div 
     data-aos="fade-left"
@@ -68,15 +68,15 @@
      
      <div class="bg-[#1f262f] dark:bg-white shadow-[0_0_20px_#00eaff] rounded-3xl mt-10 p-8">
             <h3 class="font-semibold  mb-10 italic text-2xl">Connect With Me</h3>
-     <div class="flex items-center ms-5 justify-center  my-5  gap-5">
+     <div class="flex items-center ms-5 justify-center  my-5  gap-3 md:gap-5">
        
     @for (social of socials; track $index) {
           <span 
-      class="icon border-2 rounded-full w-14 h-14 flex items-center justify-center cursor-pointer relative"
+      class="icon border-2 rounded-full w-12 h-12 lg:w-14 lg:h-14 px-4 md:px-0 flex items-center justify-center cursor-pointer relative"
       [ngStyle]="{'border-color': social.color || '#00eeff', 'color': social.color || '#00eeff'}"
       (click)="openLink(social.url)"
     >
-      <i class="fa-brands {{social.icon}} text-2xl"></i>
+      <i class="fa-brands {{social.icon}}  text-xl lg:text-2xl"></i>
       <span class="tooltip">{{ social.icon.replace('fa-', '').toUpperCase() }}</span>
     </span>
     }

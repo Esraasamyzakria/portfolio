@@ -3,7 +3,7 @@
     My Services
   </h2>
 
-  <h3 data-aos="fade-right" data-aos-delay="1000" class="font-medium text-center text-2xl  text-white dark:text-black pb-16 px-16">
+  <h3 data-aos="fade-right" data-aos-delay="1000" class="font-medium text-center text-sm md:text-2xl  text-white dark:text-black pb-16 ">
     Professional services to build scalable, responsive web applications
   </h3>
 
@@ -24,14 +24,14 @@
       </div>
 
       <!-- Title -->
-      <h3 class="text-xl font-semibold mb-2"
+      <h3 class="md:text-xl text-lg font-semibold mb-2"
           [attr.data-aos]="'fade-down'"
           [attr.data-aos-delay]="300 +$index * 500">
         {{ service.title }}
       </h3>
 
       <!-- Description -->
-      <p class="text-sm pt-5 line-coverage"
+      <p class="md:text-sm text-xs pt-5 line-coverage"
          [attr.data-aos]="'fade-down'"
          [attr.data-aos-delay]="600 + $index * 500">
         {{ service.desc }}
