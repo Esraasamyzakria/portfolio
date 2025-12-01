@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
   styleUrl: './porduct.component.scss'
 })
 export class PorductComponent {
-     constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {

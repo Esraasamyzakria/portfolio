@@ -9,13 +9,13 @@ import 'aos/dist/aos.css';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent implements AfterViewInit {
-    constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-    }
-  }
+   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+ 
+   ngAfterViewInit(): void {
+     if (isPlatformBrowser(this.platformId)) {
+       AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+     }
+   }
 services = [
   {
     icon: 'fa-code',

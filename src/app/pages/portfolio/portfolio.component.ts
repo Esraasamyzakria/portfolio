@@ -20,12 +20,12 @@ interface Social {
 })
 export class PortfolioComponent implements AfterViewInit {
     constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  
+    ngAfterViewInit(): void {
+      if (isPlatformBrowser(this.platformId)) {
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      }
     }
-  }
 
   socials: Social[] = [
     { icon: 'fa-facebook', url: 'https://www.facebook.com/?locale=ar_AR', color: '#00eeff' },

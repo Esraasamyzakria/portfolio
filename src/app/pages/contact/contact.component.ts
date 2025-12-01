@@ -16,7 +16,7 @@ interface Social {
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-     constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
