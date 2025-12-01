@@ -1,0 +1,24 @@
+@keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(3px,-10px)} }
+@keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-2px,-12px)} }
+@keyframes float3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(1px,-8px)} }
+@keyframes float4 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-3px,-14px)} }
+@keyframes float5 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(2px,-6px)} }
+@keyframes float6 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-1px,-7px)} }
+
+.animate-float1 { animation: float1 3s ease-in-out infinite; }
+.animate-float2 { animation: float2 2.8s ease-in-out infinite; }
+.animate-float3 { animation: float3 3.5s ease-in-out infinite; }
+.animate-float4 { animation: float4 3.2s ease-in-out infinite; }
+.animate-float5 { animation: float5 4s ease-in-out infinite; }
+.animate-float6 { animation: float6 3.8s ease-in-out infinite; }
+@keyframes text-bounce-x {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(5px, -3px); }
+  50%  { transform: translate(0px, -4px); }
+  75%  { transform: translate(-5px, -2px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.animate-text-bounce-x {
+  animation: text-bounce-x 2s ease-in-out infinite;
+}

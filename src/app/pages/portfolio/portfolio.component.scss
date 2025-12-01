@@ -1,0 +1,58 @@
+.blob-glow {    
+  overflow: hidden;
+  border-radius: 48% 52% 58% 42% / 42% 58% 42% 58%;
+  box-shadow: 0 0 55px #00eeff;  
+  animation: blob 5s ease-in-out infinite; 
+}
+
+@keyframes blob {
+  0% { border-radius: 45% 55% 60% 40% / 40% 55% 45% 60%; }
+  50% { border-radius: 55% 45% 40% 60% / 50% 60% 40% 50%; }
+  100% { border-radius: 45% 55% 60% 40% / 40% 55% 45% 60%; }
+}
+
+.icon {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover { transform: scale(1.2); box-shadow: 0 0 10px currentColor; }
+
+  .tooltip {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background-color: #00eeff; 
+    color: #000;               
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 10;
+  }
+
+  &:hover .tooltip { opacity: 1; transform: translateX(-50%) translateY(-12px); }
+}
+
+.hand-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2s infinite;
+  font-size: 4rem;
+  color: #00eeff;
+}
+
+@keyframes wave {
+  0% { transform: scaleX(-1) rotate(0deg); }
+  15% { transform: scaleX(-1) rotate(14deg); }
+  30% { transform: scaleX(-1) rotate(-8deg); }
+  40% { transform: scaleX(-1) rotate(14deg); }
+  50% { transform: scaleX(-1) rotate(-4deg); }
+  60% { transform: scaleX(-1) rotate(10deg); }
+  70% { transform: scaleX(-1) rotate(0deg); }
+  100% { transform: scaleX(-1) rotate(0deg); }
+}
+

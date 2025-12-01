@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+html {
+  scroll-behavior: smooth;
+}
+body {
+  .bgcard{
+    background-color: #1f262f;
+  }
+    background-color: #1f262f;
+    .bgnav{
+
+      background-color: #323946;
+    }
+     .navcolor{
+      color:#C0C0C0;
+     }
+    .textcolor{
+      color: white;
+    }
+  transition: background-color 0.3s, color 0.3s;
+
+  &.dark-mode {
+     .bgnav{
+
+      background-color: white;
+    }
+     // Dark Mode
+     .navcolor{
+      color:#00eeff;
+      
+     }
+      .textcolor{
+      color: black;
+    }
+       background-color: rgba(255, 255, 255, 0.567);
+
+.bgcard{
+    background-color: white;
+  }
+  }
+  .maincolor{
+    color: #00eeff;
+  }
+}
+.container{
+  width: 95%;
+}
+.containers{
+  width: 85%;
+}
