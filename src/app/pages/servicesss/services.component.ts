@@ -21,13 +21,13 @@ services = [
     icon: 'fa-code',
     title: 'Web Application Development',
     desc: 'Building dynamic, scalable web applications with Angular using clean and maintainable code.',
-    hov: 'fade-right'
+    hov: 'zoom-in'
   },
   {
     icon: 'fa-laptop-code',
     title: 'Responsive UI/UX Implementation',
     desc: 'Transforming Figma or Adobe XD designs into pixel-perfect, fully responsive interfaces.',
-    hov: 'fade-left'
+    hov: 'zoom-in'
   },
   {
     icon: 'fa-file-code',
@@ -39,13 +39,13 @@ services = [
     icon: 'fa-user-shield',
     title: 'Authentication & Authorization',
     desc: 'Implementing secure login flows, JWT authentication, and role-based access control.',
-    hov: 'fade-down-left'
+    hov: 'zoom-in'
   },
   {
     icon: 'fa-tachometer-alt',
     title: 'Performance Optimization',
     desc: 'Optimizing Angular apps for speed and responsiveness using best practices and lazy loading.',
-    hov: 'fade-up-right'
+    hov: 'zoom-in'
   },
   {
     icon: 'fa-cubes',

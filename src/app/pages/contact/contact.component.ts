@@ -17,7 +17,7 @@ interface Social {
 })
 export class ContactComponent {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-
+isloading: boolean = false;
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
@@ -36,7 +36,7 @@ export class ContactComponent {
   }
    public sendEmail(e: Event) {
     e.preventDefault();
-
+    this.isloading=true;
     emailjs
       .sendForm('service_tqf6ja9', 'template_a78lz14', e.target as HTMLFormElement, {
         publicKey: 'inBAd-A5l2fzVaQFe',
@@ -44,6 +44,8 @@ export class ContactComponent {
       .then(
         () => {
           console.log('SUCCESS!');
+          this.isloading=false;
+          (e.target as HTMLFormElement).reset();
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);

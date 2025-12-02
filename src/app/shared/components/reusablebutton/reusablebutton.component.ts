@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class ReusablebuttonComponent {
 downloadCV() {
   const link = document.createElement('a');
-  link.href = 'assets/Esraa Samy Elmeshad(CV).pdf';
+  link.href = 'assets/Esraa Samy Elmeshad (cv).pdf';
   link.download = 'Esraa_Samy_CV.pdf';
   link.click();
 }
